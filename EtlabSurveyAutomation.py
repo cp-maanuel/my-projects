@@ -88,8 +88,8 @@ with sync_playwright() as p:
     print("Opening ETLab login page...")
     page.goto("https://jecc.etlab.in/")
     
-    page.fill("input[name='LoginForm[username]']", "12512079")
-    page.fill("input[name='LoginForm[password]']", "Maanuel@4627")
+    page.fill("input[name='LoginForm[username]']", "USERNAME")
+    page.fill("input[name='LoginForm[password]']", "PASSWORD")
     
     page.click("button[type='submit']")
     
